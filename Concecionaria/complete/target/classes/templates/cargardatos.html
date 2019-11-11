@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Concesionaria "Don Agustín"</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Carga de nuevo vehículo</h1>
+    <form action="#" th:action="@{/CargaVehiculo}" th:object="${DatosVehiculo}" method="post">
+    	<p>Marca: <input type="text" th:field="*{marca}" /></p>
+        <p>Modelo: <input type="text" th:field="*{modelo}" /></p>
+        <p>Colores: <input type="text" th:field="*{colores}" /></p>
+        <p>Precio: <input type="text" th:field="*{precio}" /></p>
+        <p><input type="submit" value="Cargar" /> <input type="reset" value="Resetear" /></p>
+    </form>
+</body>
+</html>

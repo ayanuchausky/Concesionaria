@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Ingreso correcto</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Ingreso correcto!</h1>
+	
+    <p th:text="'Bienvenido, ' + ${param.user}+'!'" />
+    
+    <a href="/">Volver a ingreso</a>
+    <a href="/CargaVehiculo">Realizar carga de vehículo</a>
+    <a href="/Buscar">Realizar búsqueda</a>
+   
+</body>
+</html>
