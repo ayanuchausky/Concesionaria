@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Concesionaria "Don Agustín"</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor=FFFBD0>
+	<h1 align="center">Ingreso</h1>
+    <form action="#" th:action="@{/}" th:object="${vendedor}" method="post">
+    	<p align="center">Usuario: <input type="text" th:field="*{user}" /></p>
+        <p align="center">Contraseña: <input type="text" th:field="*{password}" /></p>
+        <p align="center"><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Carga del vehículo correcta!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor=FFFBD0>
+	<h1 align="center">Ingreso correcto!</h1>
+    <p align="center"th:text="'Carga del vehículo correcta!'" />
+    <p align="center"th:text="'Usted ingresó los siguientes datos del vehículo:'" />
+    <p align="center"th:text="'Marca: ' + ${param.marca}" />
+    <p align="center"th:text="'Modelo: ' + ${param.modelo}" />
+    <p align="center"th:text="'Colores: ' + ${param.colores}" />
+    <p align="center"th:text="'precio: $' + ${param.precio}" />
+    <a align="center"href="/">Volver al inicio</a>
+    <a align="center"href="/Buscar">Buscar un Vehículo</a>
+    <a align="center"href="/CargaVehiculo">Cargar otro vehículo</a>
+</body>
+</html>

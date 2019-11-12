@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Concesionaria "Don Agustín"</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor=FFFBD0>
+	<h1 align="center">Búsqueda por marca y rango de precio</h1>
+    <form action="#" th:action="@{/Buscar}" th:object="${search}" method="post">
+    	<p align="center">Marca: <input type="text" th:field="*{marca}" /></p>
+        <p align="center">Precio mínimo: <input type="text" th:field="*{min}" /></p>
+        <p align="center">Precio máximo: <input type="text" th:field="*{max}" /></p>
+        <p align="center"><input type="submit" value="Buscar" /> <input type="reset" value="Resetear" /></p>
+    </form>
+</body>
+</html>
